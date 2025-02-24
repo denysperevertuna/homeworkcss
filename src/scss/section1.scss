@@ -1,0 +1,9 @@
+.main {
+  background-color: $main-background;
+}
+.main__title-text {
+  padding: 32px 0 23px;
+}
+.line-between {
+    @include line-between
+}

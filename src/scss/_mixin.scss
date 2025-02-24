@@ -1,0 +1,46 @@
+@mixin flex-box {
+  display: flex;
+  align-items: center;
+}
+@mixin grid-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #1f1f1f;
+}
+@mixin grid-autor {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #8e8e8e;
+}
+@mixin grid-price {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #e90000;
+}
+@mixin grid-price-sale {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  text-decoration: line-through;
+  color: #8e8e8e;
+}
+@mixin grid-absolute {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #f8fdfe;
+}
+@mixin line-between {
+    height: 1px;
+    background-color: #a8a8a8;
+    flex-grow: 1;
+}
