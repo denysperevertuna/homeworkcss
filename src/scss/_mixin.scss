@@ -2,12 +2,23 @@
   display: flex;
   align-items: center;
 }
+@mixin main-logo {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  color: #1f1f1f;
+}
 @mixin grid-name {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
   color: #1f1f1f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 242px;
 }
 @mixin grid-autor {
   font-family: var(--font-family);
@@ -40,7 +51,20 @@
   color: #f8fdfe;
 }
 @mixin line-between {
-    height: 1px;
-    background-color: #a8a8a8;
-    flex-grow: 1;
+  height: 1px;
+  background-color: #a8a8a8;
+  flex-grow: 1;
+}
+@mixin grid-button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #f8fdfe;
+  padding: 8px 0;
+  width: 100%;
+  border-radius: 4px;
 }

@@ -1,0 +1,49 @@
+.main__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 32px 24px;
+}
+.grid__container {
+    padding: 32px;
+    background-color: white;
+}
+.grid__img-container {
+    padding:0 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    img {
+        margin: 0 auto;
+        width: 178px;
+    }
+}
+.grid__name {
+    @include grid-name;
+    border-bottom: 1px solid #a8a8a8;
+}
+.grid__autor {
+    @include grid-autor;
+    margin-bottom: 8px;
+}
+.grid__price-flex {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+.grid__price {
+    @include grid-price;
+}
+.grid__price-before {
+    @include grid-price-sale;
+}
+.grid__button {
+    @include grid-button;
+}
+.button-green {
+    background-color: $grid-green-button;
+}
+.button-purple {
+    background-color: $grid-purple-button;
+}
