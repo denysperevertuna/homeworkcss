@@ -1,7 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
 .header {
   background-color: $header-color;
 }
 .container {
+  width: 100%;
   max-width: 1400px;
   padding: 0px 52px;
   margin: 0 auto;
