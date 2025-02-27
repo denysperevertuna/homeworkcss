@@ -1,11 +1,10 @@
+@use 'variables';
 .main {
-  background-color: $main-background;
+  background-color: variables.$main-background;
 }
 .main__title-text {
-  @include main-logo;
   padding: 32px 0 23px;
 }
 .line-between {
-    @include line-between;
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }

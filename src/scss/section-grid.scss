@@ -1,3 +1,4 @@
+@use 'variables';
 .main__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -22,11 +23,9 @@
   }
 }
 .grid__name {
-  @include grid-name;
   border-bottom: 1px solid #a8a8a8;
 }
 .grid__autor {
-  @include grid-autor;
   margin-bottom: 8px;
 }
 .grid__price-flex {
@@ -36,19 +35,16 @@
   margin-bottom: 16px;
 }
 .grid__price {
-  @include grid-price;
 }
 .grid__price-before {
-  @include grid-price-sale;
 }
 .grid__button {
-  @include grid-button;
 }
 .button-green {
-  background-color: $grid-green-button;
+  background-color: variables.$grid-green-button;
 }
 .button-purple {
-  background-color: $grid-purple-button;
+  background-color: variables.$grid-purple-button;
 }
 .grid__flex-hit {
   display: flex;
@@ -57,7 +53,6 @@
   top: 0;
   left: 0;
   p {
-    @include grid-absolute-container;
   }
 }
 .grid__hit-background {

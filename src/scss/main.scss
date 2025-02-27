@@ -1,11 +1,10 @@
 // * Це головний sass/scss файл проекту
 // * імпортуйте сюди всі інші ваші файли sass/scss
-@import './mixin';
-@import './variable';
-@import './reset.scss';
-@import './header.scss';
-@import './section1.scss';
-@import './section-grid.scss';
-@import './hover';
-@import './footer.scss';
-@import './base.scss';
+@forward './mixin.scss';
+@forward './reset.scss';
+@forward './header.scss';
+@forward './section1.scss';
+@forward './section-grid.scss';
+@forward './hover.scss';
+@forward './footer.scss';
+@forward './base.scss';
