@@ -1,6 +1,6 @@
-@use 'variables';
+@use 'variables' as v;
 .header {
-  background-color: variables.$header-color;
+  background-color: v.$header-color;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -14,12 +14,12 @@
     align-items: center;
     gap: 8px;
     &-money {
-      font-family: variables.$primary-font;
+      font-family: v.$primary-font;
     }
   }
 }
 .header-second {
-  background-color: variables.$color-white;
+  background-color: v.$color-white;
   &__container {
     display: flex;
     justify-content: space-between;
