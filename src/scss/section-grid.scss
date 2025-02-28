@@ -75,9 +75,15 @@
     width: 100%;
     &--purple {
       background-color: v.$grid-purple-button;
+      &:hover {
+        background-color: #744978;
+      }
     }
     &--green {
       background-color: v.$grid-green-button;
+      &:hover {
+        background-color: #6db236;
+      }
     }
   }
   &__flex-hit {
@@ -108,19 +114,6 @@
   }
 }
 
-.grid__flex-hit {
-  p {
-  }
-}
-.grid__hit-background {
-  background-color: #4200ff;
-}
-.grid__new-background {
-  background-color: #af39e7;
-}
-.grid__off-background {
-  background-color: #ea33c0;
-}
 .floating-button {
   position: fixed;
   bottom: 0;
@@ -135,4 +128,7 @@
   background-color: #10bbd5;
   border: none;
   cursor: pointer;
+  &:hover {
+    transform: rotate(35deg);
+  }
 }
