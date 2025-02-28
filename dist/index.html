@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-	<link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header>
@@ -21,18 +21,21 @@
           </h1>
           <div class="header__cart">
             <span class="header__cart-money">0,00 €</span>
+            <div class="header__cart">
             <img src="./img/cart_icon.png" alt="" />
+            <p class="header__cart-count">0</p>
+          </div>
           </div>
         </div>
       </section>
-      <section class="header-second">
-        <div class="header-second__container container">
-          <p class="header-second__item">Shop by category</p>
+      <section class="header-category">
+        <div class="header-category__container container">
+          <p class="header-category__item">Shop by category</p>
           <nav>
-            <ul class="header-second__navigation">
-              <li class="header-second__item1">Order Status</li>
-              <li class="header-second__item1">Wishlist</li>
-              <li class="header-second__item1">Sign in/Join</li>
+            <ul class="header-category__navigation">
+              <li class="header-category__item">Order Status</li>
+              <li class="header-category__item">Wishlist</li>
+              <li class="header-category__item">Sign in/Join</li>
             </ul>
           </nav>
         </div>
@@ -43,178 +46,202 @@
         <h3 class="main__title-text">
           Bestsellers – our most popular items, updated daily
         </h3>
-        <div class="line-between"></div>
+        <div class="main__line-between"></div>
       </section>
-      <section class="container main__grid">
-        <div class="grid__container">
-          <div class="grid__img-container">
+      <section class="container main-grid">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-1.jpg" alt="img" />
-            <div class="grid__flex-hit">
-              <p class="grid__hit-background">Hit</p>
+            <div class="main-grid__flex-hit">
+              <p class="main-grid__hit-background">Hit</p>
             </div>
             <div class="floating-button-fixed">
               <button class="floating-button"></button>
             </div>
           </div>
-          <p class="grid__name">Final Offer</p>
-          <p class="grid__autor">Lauren Asher</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">16,05 €</p>
+          <p class="main-grid__name">Final Offer</p>
+          <p class="main-grid__autor">Lauren Asher</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">16,05 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-2.jpg" alt="img" />
-            <div class="grid__flex-hit">
-              <p class="grid__new-background">New</p>
+            <div class="main-grid__flex-hit">
+              <p class="main-grid__new-background">New</p>
             </div>
           </div>
-          <p class="grid__name">It Ends With Us: The most</p>
-          <p class="grid__autor">Colleen Hoover</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">10,52 €</p>
+          <p class="main-grid__name">It Ends With Us: The most</p>
+          <p class="main-grid__autor">Colleen Hoover</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">10,52 €</p>
           </div>
-          <a class="grid__button button-green" href="#">End up</a>
+          <a class="main-grid__button main-grid__button--green" href="#"
+            >End up</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-3.jpg" alt="img" />
-            <div class="grid__flex-hit">
-              <p class="grid__hit-background">Hit</p>
-              <p class="grid__off-background">10% off</p>
+            <div class="main-grid__flex-hit">
+              <p class="main-grid__hit-background">Hit</p>
+              <p class="main-grid__off-background">10% off</p>
             </div>
           </div>
-          <p class="grid__name">Add to basket</p>
-          <p class="grid__autor">James Clear</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">19,75 €</p>
-            <p class="grid__price-before">22,00 €</p>
+          <p class="main-grid__name">Add to basket</p>
+          <p class="main-grid__autor">James Clear</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">19,75 €</p>
+            <p class="main-grid__price-before">22,00 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-4.jpg" alt="img" />
           </div>
-          <p class="grid__name">The Creative Act</p>
-          <p class="grid__autor">Rick Rubin</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">29,45 €</p>
+          <p class="main-grid__name">The Creative Act</p>
+          <p class="main-grid__autor">Rick Rubin</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">29,45 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-5.jpg" alt="img" />
-            <div class="grid__flex-hit">
-              <p class="grid__hit-background">Hit</p>
-              <p class="grid__off-background">16% off</p>
+            <div class="main-grid__flex-hit">
+              <p class="main-grid__hit-background">Hit</p>
+              <p class="main-grid__off-background">16% off</p>
             </div>
           </div>
-          <p class="grid__name">Spare</p>
-          <p class="grid__autor">Prince Harry the Duke of Sussex</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">29,hit71 €</p>
-            <p class="grid__price-before">35,50 €</p>
+          <p class="main-grid__name">Spare</p>
+          <p class="main-grid__autor">Prince Harry the Duke of Sussex</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">29,71 €</p>
+            <p class="main-grid__price-before">35,50 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-6.jpg" alt="img" />
-            <div class="grid__flex-hit">
-              <p class="grid__new-background">New</p>
-              <p class="grid__off-background">11% off</p>
+            <div class="main-grid__flex-hit">
+              <p class="main-grid__new-background">New</p>
+              <p class="main-grid__off-background">11% off</p>
             </div>
           </div>
-          <p class="grid__name">Digital Minimalism</p>
-          <p class="grid__autor">Cal Newport</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">11,94 €</p>
-            <p class="grid__price-before">13,50 €</p>
+          <p class="main-grid__name">Digital Minimalism</p>
+          <p class="main-grid__autor">Cal Newport</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">11,94 €</p>
+            <p class="main-grid__price-before">13,50 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-7.jpg" alt="img" />
-            <div class="grid__flex-hit">
-              <p class="grid__hit-background">Hit</p>
-              <p class="grid__off-background">7% off</p>
+            <div class="main-grid__flex-hit">
+              <p class="main-grid__hit-background">Hit</p>
+              <p class="main-grid__off-background">7% off</p>
             </div>
           </div>
-          <p class="grid__name">Meditations</p>
-          <p class="grid__autor">Marcus Aurelius</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">10,65 €</p>
-            <p class="grid__price-before">11,50 €</p>
+          <p class="main-grid__name">Meditations</p>
+          <p class="main-grid__autor">Marcus Aurelius</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">10,65 €</p>
+            <p class="main-grid__price-before">11,50 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-8.jpg" alt="img" />
           </div>
-          <p class="grid__name">How to Think Like a Roman Emperor</p>
-          <p class="grid__autor">Donald Robertson</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">15,75 €</p>
+          <p class="main-grid__name">How to Think Like a Roman Emperor</p>
+          <p class="main-grid__autor">Donald Robertson</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">15,75 €</p>
           </div>
-          <a class="grid__button button-green" href="#">End up</a>
+          <a class="main-grid__button main-grid__button--green" href="#"
+            >End up</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-9.jpg" alt="img" />
           </div>
-          <p class="grid__name">The Meditations of Marcus</p>
-          <p class="grid__autor">Marcus Aurelius</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">10,90 €</p>
+          <p class="main-grid__name">The Meditations of Marcus</p>
+          <p class="main-grid__autor">Marcus Aurelius</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">10,90 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-10.jpg" alt="img" />
-            <div class="grid__flex-hit">
-              <p class="grid__off-background">20% off</p>
+            <div class="main-grid__flex-hit">
+              <p class="main-grid__off-background">20% off</p>
             </div>
           </div>
-          <p class="grid__name">Lives of the Stoics</p>
-          <p class="grid__autor">Ryan Holiday</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">11,51 €</p>
-            <p class="grid__price-before">14,50 €</p>
+          <p class="main-grid__name">Lives of the Stoics</p>
+          <p class="main-grid__autor">Ryan Holiday</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">11,51 €</p>
+            <p class="main-grid__price-before">14,50 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-11.jpg" alt="img" />
-            <div class="grid__flex-hit">
-              <p class="grid__new-background">New</p>
-              <p class="grid__off-background">30% off</p>
+            <div class="main-grid__flex-hit">
+              <p class="main-grid__new-background">New</p>
+              <p class="main-grid__off-background">30% off</p>
             </div>
           </div>
-          <p class="grid__name">Dopamine Nation</p>
-          <p class="grid__autor">Dr Anna Lembke</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">10,11 €</p>
-            <p class="grid__price-before">14,50 €</p>
+          <p class="main-grid__name">Dopamine Nation</p>
+          <p class="main-grid__autor">Dr Anna Lembke</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">10,11 €</p>
+            <p class="main-grid__price-before">14,50 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
-        <div class="grid__container">
-          <div class="grid__img-container">
+        <div class="main-grid__card">
+          <div class="main-grid__container-img">
             <img src="./img/image-12.jpg" alt="img" />
           </div>
-          <p class="grid__name">I Don't Need Therapy</p>
-          <p class="grid__autor">Toni Lodge</p>
-          <div class="grid__price-flex">
-            <p class="grid__price">21,16 €</p>
+          <p class="main-grid__name">I Don't Need Therapy</p>
+          <p class="main-grid__autor">Toni Lodge</p>
+          <div class="main-grid__price-flex">
+            <p class="main-grid__price">21,16 €</p>
           </div>
-          <a class="grid__button button-purple" href="#">Add to basket</a>
+          <a class="main-grid__button main-grid__button--purple" href="#"
+            >Add to basket</a
+          >
         </div>
       </section>
     </main>

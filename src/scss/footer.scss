@@ -1,11 +1,17 @@
+@use "variables" as v;
 .footer {
-    background-color: #4c394e;
-}
-.footer__text {
+  background-color: #4c394e;
+  &__text {
     padding: 32px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     p {
+      font-family: v.$primary-font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #f8fdfe;
     }
+  }
 }
